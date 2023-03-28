@@ -1,0 +1,117 @@
+/* style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,400&display=swap');
+
+/* debut header  */
+.header-bg {
+    background-image: url('images/background.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto; /* hauteur de la section */
+    position: relative;
+    height: 100vh;
+}
+
+.taProreClasse{
+
+}
+@media screen and (max-width: 767px) {
+    .wImg{
+        width: 25% !important;
+    }
+}
+@media screen and (min-width: 768px) {
+    .wImg{
+        width: 75% !important;
+    }
+}
+
+.footer-block {
+    background-image: url('images/Logo2.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+.footer-img  {
+    height: 100%;
+}
+
+.bg-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+  }
+  
+  .bg-size-half{
+    background-size: 28%;
+  }
+  .bg-position-top{
+    background-position: right 10% top 5%;
+  }
+
+  .footer-bottom {
+    border: 1px solid red;
+    
+  }
+
+  .parent-div {
+    border: 1px solid black;
+    height: 50%;
+  }
+
+  .child-div {
+    border: 1px solid blue;
+    height: 50%;
+    background-color: #ADDBF3;
+    width: 100%;
+  }
+
+
+  /*Social media icons*/
+
+  .fa {
+    padding: 10px;
+    font-size: 12px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #00A9FF;
+    color: white;
+  }
+  
+  /* Linkedin */
+  .fa-linkedin {
+    background: #00A9FF;
+    color: white;
+  }
+  
+
+  .list-inline-item {
+    margin-right: 0.1rem !important;
+  }
+
+  .footer-title {
+    font-family: "rokkitt";
+    font-style: "normal";
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 14px;
+    /* line-height: var(--unnamed-line-spacing-60);
+    letter-spacing: var(--unnamed-character-spacing--0-64); */
+    color:#00A9FF;
+  }
