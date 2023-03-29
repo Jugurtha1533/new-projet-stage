@@ -115,3 +115,26 @@
     letter-spacing: var(--unnamed-character-spacing--0-64); */
     color:#00A9FF;
   }
+
+  .my-border-red {
+    border: 1px solid red;
+  }
+
+  .my-border-black {
+    border: 1px solid black;
+  }
+  .my-border-green {
+    border: 1px solid green;
+  }
+
+  .fluxs-txt {
+
+    font-size: 18px;
+    
+  }
+
+  hr {
+    width: 100px;
+    height: 2px !important;
+    text-align: center;
+  }
