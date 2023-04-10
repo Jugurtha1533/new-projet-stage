@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carte Google Maps avec Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-12">
+          <div id="map"><iframe src="https://www.google.com/maps/dir/48.78382,2.4395059/9+Rue+Marc+Seguin,+94000+Cr%C3%A9teil/@48.7845354,2.4346274,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47e673449d8b48e3:0x83768eac6932ce9f!2m2!1d2.4358112!2d48.7857412" frameborder="0"></iframe></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API"></script>
+    <script>
+      function initMap() {
+        var geocoder = new google.maps.Geocoder();
+        var address = "1-3 Rue Grande Duchesse Charlotte, 57100 Thionville, France";
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status === 'OK') {
+            var location = results[0].geometry.location;
+            var mapOptions = {
+              zoom: 15,
+              center: location
+            };
+            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            var marker = new google.maps.Marker({
+              position: location,
+              map: map
+            });
+          } else {
+            alert('Geocode a échoué avec le message suivant: ' + status);
+          }
+        });
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery
